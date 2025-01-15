@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+<body>
+    <form action="" method="get,post">
+        <label>Name</label> <input type="text" name="First Name" value="VS Code" placeholder="Enter Your Name" />
+        <br>
+        <br>
+        <label>Password</label> <input type="password" placeholder="Password"/>
+        <br>
+        <br>
+        <label>Gender</label> <input type="radio" name="handle" id="1"/><label for="1">Male</label><input type="radio" name="handle" id="2"/><label for="2">Female</label>
+        <br>
+        <br>
+        <label>Hobbies</label> <input type="checkbox" name="hit" id="4"/><label for="4">Music</label><input type="checkbox" name="hit" id="5"/> <label for="5">Gardening</label><input type="checkbox" name="hit" id="6"/> <label for="6">Singing</label><input type="checkbox" name="hit" id="7"<label for="7">Watching</label>
+        <br>
+        <br>
+        <label>Message</label> <textarea rows="5" cols="8">Already Written Message</textarea>
+        <br>
+        <br>
+        <label>Country</label>
+        <select size="3" name="" multiple>
+            <option>India</option>
+            <option>Pakistan</option>
+            <option>America</option>
+            <option selected>China</option>
+        </select>
+        <br>
+        <br>
+        <label>Electronics</label>
+            <select>
+                <optgroup  label="Mobile">
+                    <option>Samsung</option>
+                    <option>Iphone</option>
+                    <option>Vivo</option>
+                </optgroup>
+                 <optgroup label="PC">
+                    <option>HP</option>
+                    <option>DEL</option>
+                    <option>ACER</option>
+                </optgroup>
+                <optgroup label="LED"
+                    <option>Android</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                </optgroup>
+            </select>
+        <label>Cars</label><input list="car"/>
+            <datalist id="car">
+                <option value="GLI">
+                <option value="XLI">
+                <option value="Rolls Royce">
+                <option value="Civic">
+                </datalist>
+        <label>Upload File</label> <input type="file" name="" accept="image/*"/>
+        <br>
+        <input type="submit" value="Save"/>
+        <br>
+        <input type="button" value="Confirm"/>
+        <br>
+        <input type="reset"/>
+        <br>
+        <input type="image" src="data:image/png;base64,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" alt="Reset" width="20px" />
+    </form>
+
+</body>
+</html>
