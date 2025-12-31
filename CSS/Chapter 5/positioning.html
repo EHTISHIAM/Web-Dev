@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position of a element </title>
+</head>
+<style>
+    /* *{
+        margin:0;
+        padding:0;
+    } */
+    .listed {
+        display: inline;
+    }
+
+    header {
+        background-color: blanchedalmond;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+
+    .container {
+        background-color: rgb(50, 181, 50);
+        margin: auto;
+        width: 50vw;
+        height: 1500px;
+        position: sticky;
+        z-index: 0;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .Box1 {
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        top: 198px;
+        left: 166px
+    }
+
+    .Box2 {
+        background-color: rgb(67, 69, 147);
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+
+    .ul {
+        list-style-type: none;
+        width: 100px;
+        list-style: square outside url(#);
+    }
+
+    .div {
+        background-color: rgb(240, 105, 105);
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="listed">Contact</li>
+                <li class="listed">Home</li>
+                <li class="listed">About</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, a!lorem10
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, a!lorem10
+        </p>
+        <div class="Box1">I am a box</div>
+        <div class="Box2">This is the second box</div>
+    </div>
+    <div class="div">
+        <ul class="ul">
+            <li>Apple</li>
+            <li>Apple</li>
+            <li>Apple</li>
+        </ul>
+    </div>
+</body>
+
+</html>
