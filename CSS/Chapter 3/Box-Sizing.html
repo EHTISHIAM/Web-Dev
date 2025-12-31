@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+</head>
+<body>
+    <style>
+    .Box1{
+        width : 100 ;
+        height : 500px;
+        background-color: blanchedalmond;
+        padding: 1px;
+        margin : 20px;
+        border: 2px solid grey; 
+    }
+    .Box2{
+        box-sizing :border-box;
+        width : 100%;
+        height : 50px ;
+        background-color: lightcoral;
+        padding: 2px;
+        /* margin: 1px; */
+        border : 2px dotted rgb(186, 50, 203) ;
+    }
+
+    </style>
+</body>
+<div class="Box1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, exercitationem ea architecto, molestiae laborum veritatis quis, nam sapiente quaerat esse ducimus earum ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, aliquam quis.
+    <div class="Box2"></div>
+</div>
+</html>
