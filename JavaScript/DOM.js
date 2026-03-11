@@ -34,7 +34,7 @@ console.dir(heading);
 // Selecting the element by the class
 let headings = document.getElementsByClassName("heading-class");
 console.log(headings);
-console.dir(headings);  // html collection smilar to array and returns the all classes with the same name and have the indexes of the classes 
+console.dir(headings); // html collection smilar to array and returns the all classes with the same name and have the indexes of the classes
 
 // Selscting with the tags 
 let para = document.getElementsByTagName("p");
