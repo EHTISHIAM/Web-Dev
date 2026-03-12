@@ -72,3 +72,20 @@ we.innerHTML = "<i>New Heading</i>";
 let hidd = document.querySelector("h3");
 console.log(hidd);
 console.log(hidd.textContent);
+
+// Q : Make a h5 tag and add the the given text in that tag
+let exer = document.querySelector("h5");
+exer.innerText += " From the Ehtisham ";
+
+// Take the 3 div with the same class and add a some unique text in each div 
+let nowi = document.querySelectorAll(".exercise");
+console.dir(nowi);
+console.log(nowi);
+nowi[0].innerText += " First";
+nowi[1].innerText += " Second";
+nowi[2].innerText += " Third";
+
+// Using the loop
+for(let steal of nowi){
+    console.log(steal.innerText);
+}
