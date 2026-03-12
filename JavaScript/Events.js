@@ -77,4 +77,5 @@ else{
 }
 console.log(curMode);
 }
+
 btnn[2].addEventListener("click",mode);
