@@ -34,3 +34,14 @@ class doctor extends human {
         console.log("Doctor");
     }
 }
+
+let object1 = new human();
+console.log(object1.eat());
+
+let object2 = new engineer();
+console.log(object2.eat(),object2.work()); //the eat is from the human parent class
+
+let object3= new doctor();
+console.log(object3.eats(),object3.work()); 
+
+//if the parent and class have the function with samee name then the function of child class will be used 
