@@ -8,9 +8,9 @@ const student = {
 };
 console.log(student);
 
-// Js Object have a special property which is called the protoype which means itself have the assigned some methods and property 
+// Js Object have a special property which is called the protoype which means itself have the assigned some methods and property and it is the object inside the object 
 let arr = ["Bananan","Apple"];
-arr.push("Ilichi");
+arr.push("Ilichi"); // this is the example of the prototype
 // Array is an object which has special property callled as prototype and it autmatiilay inherit when we created 
 console.log(arr);
 
@@ -26,10 +26,12 @@ console.log(employe.cal1())
 
 const Amir = {
     salary : 5000,
+
 }
 Amir.__proto__ = employe;
 
 console.log(Amir.cal1());
+console.log(Amir);
 
 // if the object and prototype have the same method then the its own object method is used
 
