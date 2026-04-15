@@ -14,7 +14,14 @@ console.log(child);
 console.log(obj.hello()); //accessing the data from the parent using the extend 
 
 
+/* The code defines classes for a human, engineer, and doctor, with methods for eating, sleeping,
+working (coding for engineer, treating for doctor), and creates instances to demonstrate their
+functionality. */
 class human {
+    constructor (){
+        this.spices = "Homo Sepians ";
+        console.log(spices);
+    }
     eat () {
         console.log("Eats");
     }
@@ -25,13 +32,13 @@ class human {
 
 class engineer extends human {
     work () {
-        console.log("Code");
+        return "Code";
     }
 }
 
 class doctor extends human {
     work () {
-        console.log("Treat");
+        return "Treat";
     }
 }
 
