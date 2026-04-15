@@ -19,8 +19,8 @@ working (coding for engineer, treating for doctor), and creates instances to dem
 functionality. */
 class human {
     constructor (){
-        this.spices = "Homo Sepians ";
-        console.log(spices);
+        this.spices = "Homo Sapiens ";
+        console.log(this.spices);
     }
     eat () {
         console.log("Eats");
@@ -31,8 +31,13 @@ class human {
 }
 
 class engineer extends human {
+    constructor (brand){
+        super(); // super is used to invoke the parent constructor first otherwise error comes 
+        this.brand=brand;
+        console.log(this.brand);
+    }
     work () {
-        return "Code";
+        return "Code"; // it return the code to console.log
     }
 }
 
@@ -45,7 +50,7 @@ class doctor extends human {
 let object1 = new human();
 console.log(object1.eat());
 
-let object2 = new engineer();
+let object2 = new engineer("Chemical Eng");
 console.log(object2.eat(),object2.work()); //the eat is from the human parent class
 
 let object3 = new doctor();
