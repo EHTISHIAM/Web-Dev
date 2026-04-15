@@ -1,0 +1,1 @@
+//Inheritance means passing downs the methods and properites from the parent class to child class and a key word is used to inherit the properties and method which is extend
