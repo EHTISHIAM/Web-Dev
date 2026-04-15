@@ -43,6 +43,7 @@ class engineer extends human {
 
 class doctor extends human {
     work () {
+        super.eat(); // this will call the function first of parent then next block of code will run 
         return "Treat";
     }
 }
@@ -54,7 +55,7 @@ let object2 = new engineer("Chemical Eng");
 console.log(object2.eat(),object2.work()); //the eat is from the human parent class
 
 let object3 = new doctor();
-console.log(object3.eat(),object3.work()); 
+console.log(object3.work()); 
 
 //if the parent and class have the function with samee name then the function of child class will be used 
 // This is called method overide 
