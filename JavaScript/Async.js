@@ -39,3 +39,5 @@ caluculator(3,5,sum); // the function is passed as an argument
 caluculator(5,5,(a,b)=>{
     console.log(a+b);
 })
+
+//Call Back Hell : is nested callback stacked one over another making the pyramid shape
