@@ -32,7 +32,7 @@ function sum (a,b){
 function caluculator(a,b,callback){
     callback(a,b);
 }
-caluculator(3,5,sum); // the function is passed as an argument 
+caluculator(3,5,sum);  // the function is passed as an argument 
 
 //now using the the arrow function 
 
