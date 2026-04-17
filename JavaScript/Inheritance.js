@@ -96,5 +96,5 @@ let a = 5;
 let b = 5;
 console.log("a : ",a,"b : ", b);
 console.log("a+b=",a+b);
-console.log("a-b=",a-b);
+console.log("a-b=",a-b); // sometimes error comes to a some line in whole code then the code stops at console at that line and the rest of the does not run 
 console.log("a*b=",a*b);
