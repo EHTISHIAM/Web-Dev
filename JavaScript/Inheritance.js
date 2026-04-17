@@ -59,3 +59,42 @@ console.log(object3.work());
 
 //if the parent and class have the function with samee name then the function of child class will be used 
 // This is called method overide 
+
+let DATA = "Data which Secret ";
+class user {
+    constructor (name , email){
+        this.name=name;
+        this.email=email;
+    }
+    showData(){
+        console.log(this.name);
+        console.log(this.email);
+        console.log("Secret : ",DATA);
+    }
+}
+
+let student = new user("Ehtisham","ehtihsam@gmail.com")
+console.log(student.showData());
+
+class admin extends user {
+    constructor(name,email){
+        super(name,email)
+    }
+    editData(){
+        DATA = "New Secrets are here ";
+    }
+}
+
+let adm = new admin ("Admin","admin@gmail.com");
+console.log(adm.showData());//the same data calls from the parent 
+adm.editData();//this calls the function to edit data
+console.log(adm.showData());//Now the value of the data variable is changed here 
+
+
+//ERROR HANDLING : 
+let a = 5;
+let b = 5;
+console.log("a : ",a,"b : ", b);
+console.log("a+b=",a+b);
+console.log("a-b=",a-b);
+console.log("a*b=",a*b);
