@@ -24,3 +24,13 @@ console.log("Four ");  //this code runs after the code line no 5 6 7 then the he
 
 console.log("Five");
 
+//Call Function : is a function which is passed as argument to another function 
+
+function sum (a,b){
+    console.log(a+b);
+}
+function caluculator(a,b,callback){
+    callback(a,b);
+}
+caluculator(3,5,sum); // the function is passed as an argument 
+
