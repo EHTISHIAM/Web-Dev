@@ -104,7 +104,7 @@ console.log("a-b=",a-b); // sometimes error comes to a some line in whole code t
 try{
     console.log("a+b",a+c); //error
 } catch(err){
-    console.log(err); 
+    console.log(err); // we are printing the statement of err by console log 
 }
 
 console.log("a*b=",a*b);
