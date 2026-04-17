@@ -13,7 +13,7 @@ console.log("Three");
 function hello (){
     console.log("Time waits ");
 }
-setTimeout(hello,2000); // 2 sec 
+setTimeout(hello,2000); // 2 sec  This is also a callback function in which hello function is passed as an argument 
 
 //by using the arrow function
 setTimeout(()=>{
@@ -34,3 +34,8 @@ function caluculator(a,b,callback){
 }
 caluculator(3,5,sum); // the function is passed as an argument 
 
+//now using the the arrow function 
+
+caluculator(5,5,(a,b)=>{
+    console.log(a+b);
+})
