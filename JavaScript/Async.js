@@ -89,3 +89,12 @@ let prom = new Promise((resolve,reject)=>{
 console.log(prom);
 
 //Promises work to fetch the API
+
+function getData (data,callBack){
+    setTimeout(()=>{
+        console.log("Data is :",data);
+        if(callBack){
+            callBack();
+        }
+    },5000)//5s
+}
