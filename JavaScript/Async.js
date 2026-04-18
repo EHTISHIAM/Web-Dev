@@ -87,3 +87,5 @@ let prom = new Promise((resolve,reject)=>{
     reject("Error is Printed now ");// Now the result will be in error form and state will be rejected 
 })
 console.log(prom);
+
+//Promises work to fetch the API
