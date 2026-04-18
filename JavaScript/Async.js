@@ -53,3 +53,18 @@ data (45);  // 4s
 data (46);  //4s
 data (47);  //4s   
 // all the three function runs at once after 4s but we want getdata(45) runs then after 2s the getdata(46) runs then after 2s getDAta(47) runs like we are logging into instagram then put the username then the instagram if this username exists in the database then check the password 
+
+//To achoieve this code we are doing this 
+
+function newData (getData , callBack){
+    setTimeout(()=>{
+        console.log("Data is ",getData);
+        if(callBack){
+        callBack();
+        }
+    } , 2000)
+}
+
+newData(48,()=>{
+    newData(49);  // passing the callback function 
+});
