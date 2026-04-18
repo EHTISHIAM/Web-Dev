@@ -110,9 +110,14 @@ function getData (data,callBack){
 const getPromise = () =>{
     return new Promise((resolve,reject)=>{
         console.log("Promise is called");
-        resolve("Success found ");
+        resolve("Success found "); //The bracket argument is passed as argumetn to promise.then function 
+        reject("Error here by");//Argument to reject function and both of reject and resolve can not pass at a same time and from both of them one will work for specific condition and other for other condition and I just passed to run the code and check the result 
     })
 }
 
 let prime = getPromise();
 //when Promise is resolved then we promise.then and for the error we used the promise.catch and can not use the promise.then for error it will print the error and vice verse 
+
+prime.then((res)=>{
+    console.log("Resolve is ",res);
+})
