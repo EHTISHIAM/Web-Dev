@@ -46,12 +46,12 @@ caluculator(5,5,(a,b)=>{
 function data (getData) {
     setTimeout(()=>{
         console.log("Data is ",getData);
-    },4000) //4s
+    },2000) //4s
 }
 
-data (45);  // 4s 
-data (46);  //4s
-data (47);  //4s   
+ data (45);  // 4s 
+ data (46);  //4s
+ data (47);  //4s   
 // all the three function runs at once after 4s but we want getdata(45) runs then after 2s the getdata(46) runs then after 2s getDAta(47) runs like we are logging into instagram then put the username then the instagram if this username exists in the database then check the password 
 
 //To achoieve this code we are doing this 
@@ -65,6 +65,8 @@ function newData (getData , callBack){
     } , 2000)
 }
 
-newData(48,()=>{
-    newData(49);  // passing the callback function 
+newData(4800,()=>{
+    newData(4900,()=>{
+        newData(5000);
+    }); //this is called call back  hell even I  can add more function or console.log after this parenthesis { 
 });
