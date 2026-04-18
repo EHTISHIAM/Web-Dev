@@ -88,13 +88,15 @@ let prom = new Promise((resolve,reject)=>{
 })
 console.log(prom);
 
-//Promises work to fetch the API
+//Promises work to fetch the data by calling the  API request 
 
 function getData (data,callBack){
-    setTimeout(()=>{
-        console.log("Data is :",data);
-        if(callBack){
-            callBack();
-        }
-    },5000)//5s
+    return Promise((resole,rejct)=>{ //Promise added 
+        setTimeout(()=>{
+            console.log("Data is :",data);
+            if(callBack){
+                callBack();
+            }
+        },5000)//5s
+    });
 }
