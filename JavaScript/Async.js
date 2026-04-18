@@ -72,3 +72,12 @@ newData(4800,()=>{
 });
 
 // Promises : To solve the issues of callBack Hell problem . Promises is for 'eventual' completion of the task . Eventually means it will be completed successfully or may it will give error before to completion
+//let promises = new Promise(resolve, reject)=>{......} resolve and reject are the function handler 
+
+//Promises has 3 state pending , fullfilled , rejected 
+
+let promise = new Promise((resovle,reject)=>{//reject and resolve are callbacks in Js 
+    console.log("I am a promise ");
+    resovle("Success"); //It is the result of the promise and its state will become fullfiled
+})
+console.log(promise);
