@@ -98,12 +98,8 @@ function getData (data,callBack){
             if(callBack){
                 callBack();
             }
-        },8000)//8s
+        },5000)//3s
     });
 }
 
-let prom = getData(1,()=>{
-            getData(2,()=>{
-            getData(3)
-    })
-})
+// write this code to check the getData function how wrok 1. let promises = getData(1) 2. promises  3.promises
