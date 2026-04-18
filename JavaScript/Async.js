@@ -108,5 +108,11 @@ function getData (data,callBack){
 //promise.then((resolve)=>{......})   promise.catch((error)=>{......})
 
 const getPromise = () =>{
-    
+    return new Promise((resolve,reject)=>{
+        console.log("Promise is called");
+        resolve("Success found ");
+    })
 }
+
+let prime = getPromise();
+//when Promise is resolved then we promise.then and for the error we used the promise.catch and can not use the promise.then for error it will print the error and vice verse 
