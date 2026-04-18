@@ -70,3 +70,5 @@ newData(4800,()=>{
         newData(5000);
     }); //this is called call back  hell even I  can add more function or console.log after this parenthesis { 
 });
+
+// Promises : To solve the issues of callBack Hell problem . Promises is for 'eventual' completion of the task . Eventually means it will be completed successfully or may it will give error before to completion
