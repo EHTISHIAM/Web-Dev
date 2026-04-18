@@ -103,3 +103,10 @@ function getData (data,callBack){
 }
 
 // write this code to check the getData function how wrok 1. let promises = getData(1) 2. promises  3.promises
+
+
+//promise.then((resolve)=>{......})   promise.catch((error)=>{......})
+
+const getPromise = () =>{
+    
+}
