@@ -18,7 +18,7 @@ setTimeout(hello,2000); // 2 sec  This is also a callback function in which hell
 //by using the arrow function
 setTimeout(()=>{
     console.log("Wait Ended ");
-} , 4000);
+} , 2000); // both of the function run at the same time after 2s at once 
 
 console.log("Four ");  //this code runs after the code line no 5 6 7 then the hello function and above arrow function will run and this is example of asynchronizing programming
 
@@ -42,3 +42,14 @@ caluculator(5,5,(a,b)=>{
 })
 
 //Call Back Hell : is nested callback stacked one over another making the pyramid shape
+
+function data (getData) {
+    setTimeout(()=>{
+        console.log("Data is ",getData);
+    },4000) //4s
+}
+
+data (45);  // 4s 
+data (46);  //4s
+data (47);  //4s   
+// all the three function runs at once after 4s 
