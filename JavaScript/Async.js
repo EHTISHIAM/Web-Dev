@@ -81,3 +81,9 @@ let promise = new Promise((resovle,reject)=>{//reject and resolve are callbacks 
     resovle("Success"); //It is the result of the promise and its state will become fullfiled
 })
 console.log(promise);
+
+let prom = new Promise((resolve,reject)=>{
+    console.log("2nd Promise");
+    reject("Error is Printed now ");// Now the result will be in error form and state will be rejected 
+})
+console.log(prom);
