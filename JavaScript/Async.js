@@ -52,4 +52,4 @@ function data (getData) {
 data (45);  // 4s 
 data (46);  //4s
 data (47);  //4s   
-// all the three function runs at once after 4s 
+// all the three function runs at once after 4s but we want getdata(45) runs then after 2s the getdata(46) runs then after 2s getDAta(47) runs like we are logging into instagram then put the username then the instagram if this username exists in the database then check the password 
