@@ -91,7 +91,7 @@ console.log(prom);
 //Promises work to fetch the data by calling the  API request 
 
 function getData (data,callBack){
-    return Promise((resole,rejct)=>{ //Promise added 
+    return new Promise((resole,rejct)=>{ //Promise added 
         setTimeout(()=>{
             console.log("Data is :",data);
             if(callBack){
@@ -100,3 +100,9 @@ function getData (data,callBack){
         },5000)//5s
     });
 }
+
+getData(1,()=>{
+    getData(2,()=>{
+        getData(3)
+    })
+})
