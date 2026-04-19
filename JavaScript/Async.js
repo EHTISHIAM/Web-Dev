@@ -30,7 +30,7 @@ function sum (a,b) {
     console.log(a+b);
 }
 
-function caluculator(a,b,callback){
+function caluculator (a,b,callback) {
     callback(a,b);
 }
 caluculator(3,5,sum);  // the function is passed as an argument 
