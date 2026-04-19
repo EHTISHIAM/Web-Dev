@@ -122,7 +122,7 @@ prime.then((res)=>{
     console.log("Resolve is that ", res );
 })
 prime.catch((err)=>{
-    console.log("The rejection is ",err);
+    console.log("The rejection is ", err );
 })
 
 
