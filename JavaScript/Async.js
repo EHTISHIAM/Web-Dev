@@ -127,3 +127,30 @@ prime.catch((err)=>{
 
 
 //PROMISE AWAITS 
+const asynFun = ()=>{
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("Latest Data");
+            resolve("FulFilled");
+        },10000);
+    });
+}
+
+const asyncFunc = ()=>{
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+            console.log("Fetched");
+            resolve("This also FullFilled ");
+        },10000);
+    })
+}
+
+console.log("Data 1 is going to Fetched");
+
+asynFun().then((res)=>{
+    console.log(res);
+    console.log("Data 2 is goinng to Fetched ");
+    asyncFunc().then((res)=>{
+        console.log(res);
+    });
+});
