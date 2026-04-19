@@ -82,7 +82,7 @@ let promise = new Promise((resovle,reject) => {//reject and resolve are callback
 })
 console.log(promise);
 
-let prom = new Promise((resolve,reject)=>{
+let prom = new Promise ((resolve,reject)=>{
     console.log("2nd Promise");
     reject("Error is Printed now ");// Now the result will be in error form and state will be rejected 
 })
