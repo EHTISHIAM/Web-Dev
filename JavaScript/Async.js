@@ -132,7 +132,7 @@ const asynFun = ()=>{
             setTimeout(()=>{
             console.log("Latest Data");
             resolve("FulFilled");
-        },10000);
+        }, 10000 );
     });
 }
 
