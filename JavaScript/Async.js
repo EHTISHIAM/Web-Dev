@@ -17,7 +17,7 @@ setTimeout (hello ,2000); // 2 sec  This is also a callback function in which he
 
 //by using the arrow function
 setTimeout(()=>{
-    console.log("Wait Ended ");
+    console.log("Wait Ended");
 } , 2000 ); // both of the function run at the same time after 2s at once 
 
 console.log("Four ");  //this code runs after the code line no 5 6 7 then the hello function and above arrow function will run and this is example of asynchronizing programming
