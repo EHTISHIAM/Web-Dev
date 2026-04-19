@@ -149,7 +149,7 @@ console.log("Data 1 is going to Fetched");
 
 asynFun().then((res)=>{
     console.log(res);
-    console.log("Data 2 is goinng to Fetched ");
+    console.log("Data 2 is goinng to Fetched");
     asyncFunc().then((res)=>{
         console.log(res);
     });
