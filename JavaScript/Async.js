@@ -48,7 +48,7 @@ function data (getData) {
     setTimeout(()=>{
         console.log("Data is ",getData);
     },2000) //4s
-}
+};
 
  data (45);  // 4s 
  data (46);  //4s
