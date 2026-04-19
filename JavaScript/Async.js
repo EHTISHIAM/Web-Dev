@@ -13,7 +13,7 @@ console.log("Three");
 function hello (){
     console.log("Time waits ");
 }
-setTimeout(hello,2000); // 2 sec  This is also a callback function in which hello function is passed as an argument 
+setTimeout (hello ,2000); // 2 sec  This is also a callback function in which hello function is passed as an argument 
 
 //by using the arrow function
 setTimeout(()=>{
