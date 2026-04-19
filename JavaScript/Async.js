@@ -11,7 +11,7 @@ console.log("Three");
 // settimeout () is a function which tells the delays to run the command 
 
 function hello (){
-    console.log("Time waits ");
+    console.log("Time waits");
 }
 setTimeout (hello ,2000); // 2 sec  This is also a callback function in which hello function is passed as an argument 
 
