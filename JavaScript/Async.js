@@ -26,7 +26,7 @@ console.log("Five");
 
 //Call Function : is a function which is passed as argument to another function 
 
-function sum (a,b){
+function sum (a,b) {
     console.log(a+b);
 }
 
