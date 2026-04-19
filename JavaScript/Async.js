@@ -112,7 +112,7 @@ const getPromise = () =>{
         console.log("Promise is called");
         resolve("Success found "); //The bracket argument is passed as argumetn to promise.then function 
         reject("Error here by");//Argument to reject function and both of reject and resolve can not pass at a same time and from both of them one will work for specific condition and other for other condition and I just passed to run the code and check the result 
-    })
+    });
 }
 
 let prime = getPromise();
