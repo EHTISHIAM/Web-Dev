@@ -76,7 +76,7 @@ newData(4800,()=>{
 
 //Promises has 3 state pending , fullfilled , rejected 
 
-let promise = new Promise((resovle,reject)=>{//reject and resolve are callbacks in Js 
+let promise = new Promise((resovle,reject) => {//reject and resolve are callbacks in Js 
     console.log("I am a promise ");
     resovle("Success"); //It is the result of the promise and its state will become fullfiled
 })
