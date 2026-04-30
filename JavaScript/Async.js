@@ -99,7 +99,7 @@ function getData (data,callBack){
             if(callBack){
                 callBack();
             }
-        },5000)//3s
+        },5000)//5s
     });
 }
 
