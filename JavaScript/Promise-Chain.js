@@ -10,7 +10,7 @@ function getData(ID) {
 getData(1).then((res)=>{
     return getData(2);
 }).then((res)=>{  //Promise Chain is better than the callback hell 
-    console.log(res);
+    console.log(res ,"Promise Chain one ");
 })
 
 //Asyn Awaits is more better than the Promises chains 
@@ -36,4 +36,4 @@ async function getAllData () {
     });
 }
 
-getAllData();
+getAllData();  // during the aync await function we need to call the function which is unnessary step and this step is not made during the promises chain and call back hell 
