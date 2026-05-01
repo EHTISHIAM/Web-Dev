@@ -138,7 +138,7 @@ const asynFun = ()=>{
 }
 
 const asyncFunc = ()=>{
-        return new Promise((resolve,reject)=>{
+        return new Promise((resolve,reject)=>{ // Due to the resolve and reject we do not need the call back function 
             setTimeout(()=>{
             console.log("Fetched");
             resolve("This also FullFilled ");
