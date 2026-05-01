@@ -37,3 +37,6 @@ async function getAllData () {
 }
 
 getAllData();  // during the aync await function we need to call the function which is unnessary step and this step is not made during the promises chain and call back hell 
+
+//IIFE(Immediately Invoked Function Expression )is a method / function which is used to prevent the unnessary function call and is immediately call as soon as it is defined 
+//
