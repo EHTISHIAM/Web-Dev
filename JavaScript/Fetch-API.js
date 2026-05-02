@@ -2,3 +2,10 @@
 
 
 //Fetch API provides an interface for fetching the (sending/recieving) resources . It uses the request and response objects 
+//The fetch method is used to fetch the resources (data) . They return the promises which has three states 
+//let promise = fetch(url,[options])
+
+const URL = "https://dogapi.dog/api-docs/v2/swagger.json"
+
+let prom = fetch(URL);
+console.log(prom);
