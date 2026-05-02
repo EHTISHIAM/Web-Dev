@@ -7,5 +7,7 @@
 
 const URL = "https://dogapi.dog/api-docs/v2/swagger.json"
 
-let prom = fetch(URL);
-console.log(prom);
+const getFacts = async () => {
+    let response =  await fetch(URL);
+    console.log(response);
+}
