@@ -9,9 +9,16 @@ const URL = "https://dogapi.dog/api-docs/v2/swagger.json"
 
 const getFacts = async () => {
     console.log("Fetching the Data .........");
-    let response =  await fetch(URL);
+    let response =  await fetch(URL);  //JSON 
     console.log(response);
 }
 
 //We are not getting the actual data which is presents on tha API we are getting data in the form of the promises 
 
+//Understanding the Terms 
+//AJAX is ASynchronomus JS and XML 
+
+// When we send a request to a API we get Data in diff formats which is may XML file and JSON (JS Object Notation)
+//We get response in JSON fromat and we then convert it in JS for this we use a method called JSON Method ()
+
+//JSON Method () : returns a second Promise (because first promise is returned by the fetch ) that resolve the result of parsing the response of body text as JSON (Input is JSON and the output will be the JS)
