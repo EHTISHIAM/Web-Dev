@@ -5,7 +5,7 @@
 //The fetch method is used to fetch the resources (data) . They return the promises which has three states 
 //let promise = fetch(url,[options]) when we do not add any particular opotion the fetch is sending the GET request to the server
 
-const URL = "https://dogapi.dog/api-docs/v2/swagger.json"
+const URL = "https://dogapi.dog/api/v2/facts?limit=3"
 
 const getFacts = async () => {
     console.log("Fetching the Data .........");
@@ -28,5 +28,5 @@ const getData = async () =>{
     let response = await fetch(URL) ;
     console.log(response);
     let data = await response.json();
-    console.log(data);
+    console.log(data[0]);
 }
