@@ -25,7 +25,7 @@ console.log(HelloFun());  //Check the property of this function on the console l
 
 //Now I am calling the same function get data again using the await 
 
-async function getAllData () {
+(async function  () {
     console.log("Getting Data 3 through the Await ");
     await getData(3);
     console.log("Getting Data 4 through the Await");
@@ -34,12 +34,14 @@ async function getAllData () {
     await getData(5).then((res)=>{  //uses then along the await 
         console.log(res , "Await One ");
     });
-}
+} ) ();
 
-getAllData();  // during the aync await function we need to call the function which is unnessary step and this step is not made during the promises chain and call back hell 
+//getAllData();  
+
+// during the aync await function we need to call the function which is unnessary step and this step is not made during the promises chain and call back hell 
 
 //IIFE(Immediately Invoked Function Expression )is a method / function which is used to prevent the unnessary function call and is immediately call as soon as it is defined 
 // In this function we enclose the whole function in a paranthesis () and do not add the name of the function and at the end again added the paranthesis () .
 
 /* (  function (){.............}  
-             ) () ;   */
+             ) () ;          Added this function in the above as an example  */
