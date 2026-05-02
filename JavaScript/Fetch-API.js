@@ -22,3 +22,11 @@ const getFacts = async () => {
 //We get response in JSON fromat and we then convert it in JS for this we use a method called JSON Method ()
 
 //JSON Method () : returns a second Promise (because first promise is returned by the fetch ) that resolve the result of parsing the response of body text as JSON (Input is JSON and the output will be the JS)
+
+const getData = async () =>{
+    console.log("Fetching the Data ........");
+    let response = await fetch(URL) ;
+    console.log(response);
+    let data = await response.json();
+    console.log(data);
+}
