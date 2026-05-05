@@ -35,7 +35,11 @@ const getData = async () =>{
         let fullResponnse = await response.json();
         console.log(fullResponnse);
         const factsArray = fullResponnse.data;
-        console.log(`Success ! Recieved ${factsArray.length}`)
+        console.log(`Success ! Recieved ${factsArray.length}`);
+        factsArray.forEach((factItem,index) => {
+            const factText = factItem.attributes.body;
+            console.log(`${index + 1},${factText}`);
+        });
     }
         catch (error) {
         console.log("Error ! ", error);
