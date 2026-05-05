@@ -23,6 +23,10 @@ const getFacts = async () => {
 
 //JSON Method () : returns a second Promise (because first promise is returned by the fetch ) that resolve the result of parsing the response of body text as JSON (Input is JSON and the output will be the JS)
 
+let btn = document.querySelector("#bton");
+let factPara = document.querySelectorAll(".para");
+
+
 const getData = async () =>{
     console.log("Fetching the Data ........");
         try {
@@ -32,13 +36,13 @@ const getData = async () =>{
             throw new Error (`API Error Response : ${response.status}`);
             }
     
-        let fullResponnse = await response.json();
-        console.log(fullResponnse);
-        const factsArray = fullResponnse.data;
+        let fullResponse = await response.json();
+        console.log(fullResponse);
+        const factsArray = fullResponse.data;
         console.log(`Success ! Recieved ${factsArray.length}`);
         factsArray.forEach((factItem,index) => {
             const factText = factItem.attributes.body;
-            console.log(`${index + 1},${factText}`);
+            factPara[index].textContent= factText;
         });
     }
         catch (error) {
@@ -46,4 +50,5 @@ const getData = async () =>{
     }
 };
 
-getData();
+
+btn.addEventListener("click", getData);
