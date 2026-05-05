@@ -29,12 +29,15 @@ const getData = async () =>{
         let response = await fetch(URL) ; 
         console.log(response);
         if(!response.ok){
-            throw new Error (`API Error Response : ${response.status}`)
+            throw new Error (`API Error Response : ${response.status}`);
             }
     
-        let data = await response.json();
-        console.log(data[0]);
+        let fullResponnse = await response.json();
+        console.log(fullResponnse);
+        const factsArray = fullResponnse.data;
+        console.log(`Success ! Recieved ${factsArray.length}`)
     }
-    } catch (error) {
+        catch (error) {
         console.log("Error ! ", error);
     }
+};
