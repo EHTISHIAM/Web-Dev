@@ -25,7 +25,9 @@ const getFacts = async () => {
 
 const getData = async () =>{
     console.log("Fetching the Data ........");
-    let response = await fetch(URL) ;
+    try {
+    let response = await fetch(URL) ; 
+    }
     console.log(response);
     let data = await response.json();
     console.log(data[0]);
