@@ -45,3 +45,5 @@ const getData = async () =>{
         console.log("Error ! ", error);
     }
 };
+
+getData();
