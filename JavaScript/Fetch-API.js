@@ -27,6 +27,9 @@ const getData = async () =>{
     console.log("Fetching the Data ........");
     try {
     let response = await fetch(URL) ; 
+    if(!response.ok){
+        throw new Error (`API Error Response : ${response.status}`)
+    }
     }
     console.log(response);
     let data = await response.json();
