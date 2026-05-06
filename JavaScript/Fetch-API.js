@@ -50,5 +50,17 @@ const getData = async () =>{
     }
 };
 
+//Using the promises 
+// function getData (){
+//     fetch(URL).then((response)=>{
+//         return response.json();
+//     }).then((data)=>{
+//         const Facts = data.data ;
+//         Facts.forEach((factItem,index)=>{
+//             const factText = factItem.attributes.body;
+//             factPara[index].textContent= factText;
+//         })
+//     })
+// }
 
 btn.addEventListener("click", getData);
