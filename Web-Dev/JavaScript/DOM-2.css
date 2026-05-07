@@ -1,0 +1,18 @@
+#box{
+    color: aliceblue;
+    background-color: darkblue;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+}
+.prtc{
+   
+    color: chartreuse;
+     align-content: center;
+    text-align: center;
+}
+.doc{
+    background-color: burlywood;
+    height:200px;
+    width: 200px;
+};
