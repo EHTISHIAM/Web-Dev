@@ -51,6 +51,7 @@ const getData = async () =>{
 };
 
 
+
 //Using the promises Chains 
 // function getData (){
 //     fetch(URL).then((response)=>{
