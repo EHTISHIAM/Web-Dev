@@ -70,4 +70,5 @@ btn.addEventListener("click", getData);
 
 //Request and Response 
 
-//HTTP Verbs HyperText Transfer Protocol   
+//HTTP Verbs HyperText Transfer Protocol   it is language which is used to send request to the server or API and they sends back the response and it has methods like get push post delete and it has the response status as well and the http headers contains the details which are http status , content type etc
+
