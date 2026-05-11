@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .container {
+        background: linear-gradient(red, yellow);
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background: radial-gradient(rgb(0, 255, 221), green, blue, rgb(202, 51, 51));
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: AnimateBox 1s linear 0.1s infinite alternate-reverse;
+    }
+
+    @keyframes AnimateBox {
+        0% {
+            transform: translateY(0px);
+            background-color: red;
+            border-radius: 0px;
+        }
+
+        50% {
+            transform: translateY(200px);
+            background-color: yellow;
+            border-radius: 50px;
+        }
+
+        100% {
+            transform: translateY(0px);
+            background-color: red;
+            border-radius: 0px;
+        }
+
+        from {
+            width: 100px;
+            height: 100px;
+        }
+
+        to {
+            width: 300px;
+            height: 300px;
+        }
+    }
+</style
+<body>
+    <div class="container">
+        <div class="box">This is me</div>
+    </div>
+</body>
+</html>

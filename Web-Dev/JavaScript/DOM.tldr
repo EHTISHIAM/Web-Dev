@@ -13,15 +13,16 @@
 			"com.tldraw.instance_presence": 6,
 			"com.tldraw.pointer": 1,
 			"com.tldraw.shape": 4,
-			"com.tldraw.asset.bookmark": 2,
-			"com.tldraw.asset.image": 5,
+			"com.tldraw.user": 1,
+			"com.tldraw.asset.image": 6,
 			"com.tldraw.asset.video": 5,
+			"com.tldraw.asset.bookmark": 2,
 			"com.tldraw.shape.group": 0,
 			"com.tldraw.shape.text": 4,
 			"com.tldraw.shape.bookmark": 2,
 			"com.tldraw.shape.draw": 4,
 			"com.tldraw.shape.geo": 11,
-			"com.tldraw.shape.note": 10,
+			"com.tldraw.shape.note": 12,
 			"com.tldraw.shape.line": 5,
 			"com.tldraw.shape.frame": 1,
 			"com.tldraw.shape.arrow": 8,
@@ -276,9 +277,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 258.7717268427006,
-			"y": 71.43569731723537,
-			"z": 0.5389682729286419,
+			"x": 172.91125894284806,
+			"y": -111.81912616106351,
+			"z": 0.9144812254870988,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -422,10 +423,8 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:e9BG5nlvrz-pqg1Djg6_8"
-			],
-			"hoveredShapeId": "shape:e9BG5nlvrz-pqg1Djg6_8",
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -794,7 +793,7 @@
 				"w": 115.3333740234375,
 				"h": 61.69791793823242,
 				"geo": "rectangle",
-				"dash": "draw",
+				"dash": "solid",
 				"growY": 0,
 				"url": "",
 				"scale": 1,
@@ -1046,6 +1045,14 @@
 			"typeName": "shape"
 		},
 		{
+			"name": "",
+			"color": "#F2555A",
+			"imageUrl": "",
+			"meta": {},
+			"id": "user:FKdEZIhRkdJK8kKRcbwhI",
+			"typeName": "user"
+		},
+		{
 			"x": 386,
 			"y": 45.333343505859375,
 			"rotation": 0,
@@ -1112,25 +1119,25 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:geo": "rectangle",
+				"tldraw:fill": "none",
 				"tldraw:horizontalAlign": "middle",
-				"tldraw:verticalAlign": "middle"
+				"tldraw:dash": "solid"
 			},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
 			"exportBackground": true,
 			"isDebugMode": false,
-			"isToolLocked": true,
+			"isToolLocked": false,
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1046,
-				"h": 605.3333740234375
+				"w": 1249.5999755859375,
+				"h": 707.2000122070312
 			},
 			"insets": [
 				false,
@@ -1145,7 +1152,7 @@
 			"isChatting": false,
 			"highlightedUserIds": [],
 			"isFocused": true,
-			"devicePixelRatio": 1.5,
+			"devicePixelRatio": 1.25,
 			"isCoarsePointer": false,
 			"isHoveringCanvas": true,
 			"openMenus": [],
